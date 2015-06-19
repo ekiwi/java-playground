@@ -1,0 +1,6 @@
+# javap output
+javap/
+
+# c# comparison tests
+*.cs
+*.dll
