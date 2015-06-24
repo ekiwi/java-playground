@@ -4,7 +4,7 @@ env.Append(JAVACFLAGS = ['-encoding', 'utf8', '-Xlint:deprecation', '-Xlint:unch
 # add dependencies here
 # env.AppendUnique(JAVACLASSPATH="/usr/share/java/bcel.jar")
 
-manifest = env.Manifest(target='build/MANIFEST.MF', mainclass="Main")
+manifest = env.Manifest(target='build/MANIFEST.MF', mainclass="events.Main")
 app = env.JavaToJar('build/enums.jar', ['src', 'build/MANIFEST.MF'])
 
 
