@@ -8,3 +8,9 @@
 *.pyc
 .sconsign.dblite
 build/
+
+# eclipse
+.classpath
+.project
+.settings
+bin/
