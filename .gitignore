@@ -3,3 +3,8 @@
 
 # java
 *.class
+
+# scons
+*.pyc
+.sconsign.dblite
+build/
