@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class Node {
 	private List<Timeout> timeoutHandler = new ArrayList<Timeout>();
 	private List<TemperatureEventHandler> temperatureHandler = new ArrayList<TemperatureEventHandler>();
-	private float temperature;
+	private int temperature;
 	
-	public Node(float temperature) {
+	public Node(int temperature) {
 		this.temperature = temperature;
 	}
 	
@@ -25,7 +25,7 @@ public class Node {
 		}
 	}
 	
-	public void receiveNewTemperature(float temperature) {
+	public void receiveNewTemperature(int temperature) {
 		if (this.temperature != temperature) {
 			System.out.println("Node: temperature value change from " + this.temperature + " to: " + temperature);
 			this.temperature = temperature;
