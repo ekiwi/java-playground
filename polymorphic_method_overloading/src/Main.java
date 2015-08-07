@@ -34,6 +34,19 @@ public class Main {
 		}
 	}
 
+
+	static interface SpecificEventHandler {
+		public void handle(KeyboardEvent e);
+		public void handle(MouseEvent e);
+	}
+// the following does not compile!
+
+//	static class GenericEventHandler implements SpecificEventHandler {
+//		public void handle(Event e) {
+//			System.out.println("GenericEventHandler::handle Event");
+//		}
+//	}
+
 	public static void main(String[] args)
 	{
 		System.out.println("Polymorphic Method Overloading");
