@@ -1,4 +1,4 @@
-env = Environment(toolpath = ['../scons'], tools = ['default', 'oft_java'])
+env = Environment(toolpath = ['../scons/tools/'], tools = ['default', 'java2jar'])
 env.Append(JAVACFLAGS = ['-encoding', 'utf8', '-Xlint:deprecation', '-Xlint:unchecked'])
 
 # add dependencies here
